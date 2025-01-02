@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: metal_sdk
+Version: 2.5.1
+Summary: SDK for getmetal.io
+Project-URL: Github, https://github.com/getmetal/metal-python
+Author-email: Metal Technologies Inc <james@getmetal.io>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: httpx
+Requires-Dist: typing-extensions
+Description-Content-Type: text/markdown
+
+# 🤘 Metal Python SDK
+
+- [**Developer Documentation**](https://docs.getmetal.io/sdk-python)
+- [**PyPi Package**](https://pypi.org/project/metal-sdk/)
+
+## Setup
+
+```bash
+$ pip3 install metal-sdk
+```
+
+## Usage
+
+```python
+from metal_sdk.metal import Metal
+
+
+metal = Metal("api_key", "client_id", "index_id");
+
+metal.index({ "text": "a" })
+metal.index({ "text": "b" })
+metal.index({ "text": "c" })
+```
+
+[Async example](./examples/example_async.py)
+
+## Testing
+
+```bash
+$ python3 -m unittest tests/test_metal.py
+```
+
+[Reference](https://packaging.python.org/en/latest/tutorials/packaging-projects/)

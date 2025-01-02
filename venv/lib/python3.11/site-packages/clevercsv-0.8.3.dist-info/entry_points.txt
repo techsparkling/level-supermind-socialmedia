@@ -1,0 +1,2 @@
+[console_scripts]
+clevercsv = clevercsv.__main__:main

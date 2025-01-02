@@ -1,0 +1,112 @@
+Metadata-Version: 2.3
+Name: langflow-base
+Version: 0.1.1
+Summary: A Python package with a built-in web application
+Project-URL: Repository, https://github.com/langflow-ai/langflow
+Project-URL: Documentation, https://docs.langflow.org
+Maintainer-email: Carlos Coelho <carlos@langflow.org>, Cristhian Zanforlin <cristhian.lousa@gmail.com>, Gabriel Almeida <gabriel@langflow.org>, Igor Carvalho <igorr.ackerman@gmail.com>, Lucas Eduoli <lucaseduoli@gmail.com>, Otávio Anovazzi <otavio2204@gmail.com>, Rodrigo Nader <rodrigo@langflow.org>, Italo dos Anjos <italojohnnydosanjos@gmail.com>
+License: MIT
+Keywords: gpt,gui,langchain,nlp,openai
+Requires-Python: <3.13,>=3.10
+Requires-Dist: aiofiles<25.0.0,>=24.1.0
+Requires-Dist: alembic<2.0.0,>=1.13.0
+Requires-Dist: assemblyai<1.0.0,>=0.33.0
+Requires-Dist: asyncer<1.0.0,>=0.0.5
+Requires-Dist: bcrypt==4.0.1
+Requires-Dist: cachetools<6.0.0,>=5.5.0
+Requires-Dist: chardet<6.0.0,>=5.2.0
+Requires-Dist: clickhouse-connect==0.7.19
+Requires-Dist: crewai~=0.80.0
+Requires-Dist: cryptography<44.0.0,>=42.0.5
+Requires-Dist: defusedxml<1.0.0,>=0.7.1
+Requires-Dist: diskcache<6.0.0,>=5.6.3
+Requires-Dist: docstring-parser<1.0.0,>=0.16
+Requires-Dist: duckdb<2.0.0,>=1.0.0
+Requires-Dist: emoji<3.0.0,>=2.12.0
+Requires-Dist: fastapi-pagination<1.0.0,>=0.12.29
+Requires-Dist: fastapi<1.0.0,>=0.115.2
+Requires-Dist: filelock<4.0.0,>=3.15.4
+Requires-Dist: firecrawl-py<2.0.0,>=1.0.16
+Requires-Dist: grandalf<1.0.0,>=0.8.0
+Requires-Dist: gunicorn<24.0.0,>=22.0.0
+Requires-Dist: httpx[http2]<1.0.0,>=0.27
+Requires-Dist: jq<2.0.0,>=1.7.0; sys_platform != 'win32'
+Requires-Dist: langchain-core~=0.3.15
+Requires-Dist: langchain-experimental<1.0.0,>=0.0.61
+Requires-Dist: langchainhub~=0.1.15
+Requires-Dist: langchain~=0.3.3
+Requires-Dist: loguru<1.0.0,>=0.7.1
+Requires-Dist: multiprocess<1.0.0,>=0.70.14
+Requires-Dist: nanoid<3.0.0,>=2.0.0
+Requires-Dist: nest-asyncio<2.0.0,>=1.6.0
+Requires-Dist: opentelemetry-api<2.0.0,>=1.25.0
+Requires-Dist: opentelemetry-exporter-prometheus<1.0.0,>=0.46b0
+Requires-Dist: opentelemetry-instrumentation-fastapi<1.0.0,>=0.46b0
+Requires-Dist: opentelemetry-sdk<2.0.0,>=1.25.0
+Requires-Dist: orjson==3.10.0
+Requires-Dist: pandas==2.2.2
+Requires-Dist: passlib<2.0.0,>=1.7.4
+Requires-Dist: pillow<11.0.0,>=10.2.0
+Requires-Dist: platformdirs<5.0.0,>=4.2.0
+Requires-Dist: prometheus-client<1.0.0,>=0.20.0
+Requires-Dist: pydantic-settings<3.0.0,>=2.2.0
+Requires-Dist: pydantic~=2.7.0
+Requires-Dist: pypdf~=5.1.0
+Requires-Dist: pyperclip<2.0.0,>=1.8.2
+Requires-Dist: python-docx<2.0.0,>=1.1.0
+Requires-Dist: python-jose<4.0.0,>=3.3.0
+Requires-Dist: python-multipart<1.0.0,>=0.0.12
+Requires-Dist: rich<14.0.0,>=13.7.0
+Requires-Dist: sentry-sdk[fastapi,loguru]<3.0.0,>=2.5.1
+Requires-Dist: setuptools<76.0.0,>=70
+Requires-Dist: spider-client<1.0.0,>=0.0.27
+Requires-Dist: sqlmodel==0.0.18
+Requires-Dist: typer<1.0.0,>=0.13.0
+Requires-Dist: uncurl<1.0.0,>=0.0.11
+Requires-Dist: uvicorn<1.0.0,>=0.30.0
+Provides-Extra: all
+Requires-Dist: celery>=5.3.1; extra == 'all'
+Requires-Dist: ctransformers>=0.2; extra == 'all'
+Requires-Dist: flower>=1.0.0; extra == 'all'
+Requires-Dist: llama-cpp-python>=0.2.0; extra == 'all'
+Requires-Dist: redis>=4.6.0; extra == 'all'
+Requires-Dist: sentence-transformers>=2.0.0; extra == 'all'
+Provides-Extra: deploy
+Requires-Dist: celery>=5.3.1; extra == 'deploy'
+Requires-Dist: flower>=1.0.0; extra == 'deploy'
+Requires-Dist: redis>=4.6.0; extra == 'deploy'
+Provides-Extra: dev
+Requires-Dist: devtools>=0.12.2; extra == 'dev'
+Requires-Dist: dictdiffer>=0.9.0; extra == 'dev'
+Requires-Dist: httpx[http2]>=0.27; extra == 'dev'
+Requires-Dist: ipykernel>=6.29.0; extra == 'dev'
+Requires-Dist: mypy>=1.11.0; extra == 'dev'
+Requires-Dist: pandas-stubs>=2.1.4.231227; extra == 'dev'
+Requires-Dist: pre-commit>=3.7.0; extra == 'dev'
+Requires-Dist: pytest-asyncio>=0.23.0; extra == 'dev'
+Requires-Dist: pytest-cov>=5.0.0; extra == 'dev'
+Requires-Dist: pytest-flakefinder>=1.1.0; extra == 'dev'
+Requires-Dist: pytest-instafail>=0.5.0; extra == 'dev'
+Requires-Dist: pytest-mock>=3.14.0; extra == 'dev'
+Requires-Dist: pytest-profiling>=1.7.0; extra == 'dev'
+Requires-Dist: pytest-split>=0.9.0; extra == 'dev'
+Requires-Dist: pytest-sugar>=1.0.0; extra == 'dev'
+Requires-Dist: pytest-xdist>=3.6.0; extra == 'dev'
+Requires-Dist: pytest>=8.2.0; extra == 'dev'
+Requires-Dist: requests>=2.32.0; extra == 'dev'
+Requires-Dist: respx>=0.21.1; extra == 'dev'
+Requires-Dist: ruff>=0.6.2; extra == 'dev'
+Requires-Dist: types-google-cloud-ndb>=2.2.0.0; extra == 'dev'
+Requires-Dist: types-markdown>=3.7.0.20240822; extra == 'dev'
+Requires-Dist: types-passlib>=1.7.7.13; extra == 'dev'
+Requires-Dist: types-pillow>=10.2.0.20240213; extra == 'dev'
+Requires-Dist: types-python-jose>=3.3.4.8; extra == 'dev'
+Requires-Dist: types-pywin32>=306.0.0.4; extra == 'dev'
+Requires-Dist: types-pyyaml>=6.0.12.8; extra == 'dev'
+Requires-Dist: types-redis>=4.6.0.5; extra == 'dev'
+Requires-Dist: types-requests>=2.32.0; extra == 'dev'
+Requires-Dist: vulture>=2.11; extra == 'dev'
+Provides-Extra: local
+Requires-Dist: ctransformers>=0.2; extra == 'local'
+Requires-Dist: llama-cpp-python>=0.2.0; extra == 'local'
+Requires-Dist: sentence-transformers>=2.0.0; extra == 'local'

@@ -1,0 +1,2 @@
+[pmxbot_handlers]
+Wolfram|Alpha = wolframalpha.pmxbot
