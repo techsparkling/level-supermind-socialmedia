@@ -1,1 +1,0 @@
-"""Composio tool execution environment."""
